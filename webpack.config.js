@@ -5,5 +5,10 @@ module.exports = {
   output: {
     filename:'bundle.js',
     path:path.join(__dirname,'build')
-  }
+  },
+  devServer:{
+    historyApiFallback:true,
+    contentBase:"./",
+    hot:true
+  },
 }
